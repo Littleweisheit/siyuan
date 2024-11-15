@@ -3,7 +3,7 @@ name: CD For SiYuan
 on:
   push:
     tags:
-      - '*-dev*'
+      - '3.1.11'
   workflow_dispatch:
 
 # ref https://docs.github.com/zh/actions/learn-github-actions/variables
