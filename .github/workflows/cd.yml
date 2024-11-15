@@ -80,7 +80,7 @@ jobs:
         with:
           name: ${{ steps.release_info.outputs.release_version }}
         #  tag: ${{ github.ref }}
-         tag: "v3.1.11"
+          tag: "v3.1.11"
           body: ${{ env.release_body }}
           draft: false
           prerelease: true
