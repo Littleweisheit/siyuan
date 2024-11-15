@@ -15,7 +15,8 @@ export const needSubscribe = (tip = window.siyuan.languages._kernel[29]) => {
             showMessage(tip);
         }
     }
-    return true;
+    //return true;
+    return false;
 };
 
 export const isPaidUser = () => {
