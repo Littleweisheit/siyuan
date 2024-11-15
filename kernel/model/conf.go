@@ -842,8 +842,9 @@ func InitBoxes() {
 }
 
 func IsSubscriber() bool {
-	u := Conf.GetUser()
-	return nil != u && (-1 == u.UserSiYuanProExpireTime || 0 < u.UserSiYuanProExpireTime) && 0 == u.UserSiYuanSubscriptionStatus
+	//u := Conf.GetUser()
+	//return nil != u && (-1 == u.UserSiYuanProExpireTime || 0 < u.UserSiYuanProExpireTime) && 0 == u.UserSiYuanSubscriptionStatus
+	return true
 }
 
 func IsPaidUser() bool {
@@ -855,9 +856,11 @@ func IsPaidUser() bool {
 
 	u := Conf.GetUser()
 	if nil == u {
-		return false
+		//return false
+		return true
 	}
-	return 1 == u.UserSiYuanOneTimePayStatus
+	//return 1 == u.UserSiYuanOneTimePayStatus
+	return true
 }
 
 const (
